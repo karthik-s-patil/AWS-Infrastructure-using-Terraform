@@ -30,7 +30,12 @@ output "private_subnet_ids" {
 
 output "nat_gateway_id" {
   description = "NAT Gateway ID"
-  value       = aws_nat_gateway.nat.id
+  value       = aws_nat_gateway.nat_1.id
+}
+
+output "nat_gateway_id" {
+  description = "NAT Gateway ID"
+  value       = aws_nat_gateway.nat_2.id
 }
 
 output "public_route_table_id" {
@@ -40,7 +45,12 @@ output "public_route_table_id" {
 
 output "private_route_table_id" {
   description = "Private Route Table ID"
-  value       = aws_route_table.pr_rt.id
+  value       = aws_route_table.pr_rt_1.id
+}
+
+output "private_route_table_id" {
+  description = "Private Route Table ID"
+  value       = aws_route_table.pr_rt_2.id
 }
 
 output "alb_security_group_id" {
